@@ -99,7 +99,9 @@ function send_notification_email(
     string $contato,
     string $mensagem
 ): bool {
-    $to      = AURIS_MAIL_TO;
+    // AURIS_MAIL_TO é uma lista de endereços; mail() aceita múltiplos
+    // destinatários separados por vírgula num único parâmetro $to.
+    $to      = implode(',', AURIS_MAIL_TO);
     $subject = '=?UTF-8?B?' . base64_encode(AURIS_MAIL_SUBJECT) . '?=';
 
     $bodyLines = [

@@ -941,11 +941,21 @@ p.lede {
   display: flex;
   gap: 24px;
 }
-.site-footer__legal a {
+.site-footer__legal a,
+.site-footer__cookie-link {
   color: var(--color-surface-2-70);
   transition: color var(--transition-base);
 }
-.site-footer__legal a:hover { color: var(--color-white); }
+.site-footer__legal a:hover,
+.site-footer__cookie-link:hover { color: var(--color-white); }
+
+.site-footer__cookie-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
 
 /* =========================
    Páginas legais (Política de Privacidade / LGPD)
@@ -1004,6 +1014,54 @@ p.lede {
   border-radius: var(--radius-sm);
   font-size: var(--fs-13_5);
   color: var(--color-primary-70);
+}
+
+/* =========================
+   Cookie banner
+   ========================= */
+.cookie-banner {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  max-width: 720px;
+  margin-inline: auto;
+  background: var(--color-white);
+  border: 1px solid var(--color-primary-18);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card-elevated);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+.cookie-banner__text {
+  font-size: var(--fs-14);
+  line-height: 1.6;
+  color: var(--color-primary-72);
+}
+.cookie-banner__text a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+.cookie-banner__actions {
+  display: flex;
+  gap: var(--space-s);
+  justify-content: flex-end;
+}
+.cookie-banner__actions .btn {
+  padding: 10px 20px;
+  font-size: var(--fs-14);
+}
+@media (min-width: 640px) {
+  .cookie-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-m);
+  }
+  .cookie-banner__actions { flex-shrink: 0; }
 }
 
 /* =========================

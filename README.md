@@ -54,7 +54,7 @@ isolada exatamente para facilitar essa troca sem mexer no resto do fluxo.
 ## Configuração para o cliente
 
 Antes de publicar, edite `php/config.php`:
-- `AURIS_MAIL_TO` — e-mail que deve receber as solicitações do formulário.
+- `AURIS_MAIL_TO` — lista de e-mails que devem receber as solicitações do formulário (pode ter um ou mais endereços).
 
 Requisitos do servidor de hospedagem: PHP 7.4+ com `mail()` habilitado.
 
