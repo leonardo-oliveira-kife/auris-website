@@ -42,7 +42,7 @@
     banner.setAttribute('aria-label', 'Aviso de cookies');
     banner.innerHTML =
       '<p class="cookie-banner__text">' +
-        'Usamos cookies para entender como você usa o site (Google Analytics) e ' +
+        'Usamos cookies de análise para entender como você usa o site e ' +
         'melhorar sua experiência. Você pode aceitar ou recusar a qualquer momento. ' +
         'Saiba mais na <a href="privacidade.html">Política de Privacidade</a>.' +
       '</p>' +
