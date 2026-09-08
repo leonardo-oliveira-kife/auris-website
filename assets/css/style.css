@@ -948,6 +948,65 @@ p.lede {
 .site-footer__legal a:hover { color: var(--color-white); }
 
 /* =========================
+   Páginas legais (Política de Privacidade / LGPD)
+   ========================= */
+.legal { padding-block: 64px 96px; }
+.legal__container { max-width: 760px; }
+
+.legal__title {
+  font-size: clamp(2rem, 1.6rem + 1.2vw, 2.75rem);
+  margin-bottom: var(--space-xs);
+}
+
+.legal__updated {
+  font-size: var(--fs-14);
+  color: var(--color-primary-55);
+  margin-bottom: var(--space-m);
+}
+
+.legal p {
+  font-size: var(--fs-16);
+  line-height: 1.7;
+  color: var(--color-primary-72);
+  margin-bottom: var(--space-s);
+}
+
+.legal h2 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-21);
+  color: var(--color-primary);
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.legal ul {
+  margin: 0 0 var(--space-s) 0;
+  padding-left: 1.25em;
+  list-style: disc;
+}
+.legal ul li {
+  font-size: var(--fs-16);
+  line-height: 1.7;
+  color: var(--color-primary-72);
+  margin-bottom: var(--space-xs);
+}
+
+.legal a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.legal__disclaimer {
+  margin-top: var(--space-3xl);
+  padding: var(--space-2xl);
+  background: var(--color-surface-1);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-13_5);
+  color: var(--color-primary-70);
+}
+
+/* =========================
    Utilitário: reveal (GSAP hook)
    ========================= */
 [data-reveal] {
