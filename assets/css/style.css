@@ -1007,15 +1007,6 @@ p.lede {
   text-decoration: underline;
 }
 
-.legal__disclaimer {
-  margin-top: var(--space-3xl);
-  padding: var(--space-2xl);
-  background: var(--color-surface-1);
-  border-radius: var(--radius-sm);
-  font-size: var(--fs-13_5);
-  color: var(--color-primary-70);
-}
-
 /* =========================
    Cookie banner
    ========================= */
